@@ -38,7 +38,9 @@ Console.WriteLine(fecha5.ToShortDateString());
 Console.WriteLine(fecha5.ToLongDateString());
 Console.WriteLine(fecha5.ToString());
 
+DateOnly fecha7= new();
 
+var fecha9= new DateOnly();
 
 
 //Console.WriteLine(comparacion);
