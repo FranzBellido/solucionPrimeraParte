@@ -6,16 +6,16 @@
 //Console.WriteLine("ingrese b");
 //var B = Console.ReadLine();
 
-//var a = Convert.ToInt32(A);
-//var b = Convert.ToInt32(B);
+//var a = Convert.ToInt32("3");
+//var b = Convert.ToInt32("6");
 
-//if (a > b)
-//{
-//	Console.WriteLine("a es mayor que b");
-//}
-//else {
-//	Console.WriteLine("a es menor que b");
-//}
+////if (a > b)
+////{
+////	Console.WriteLine("a es mayor que b");
+////}
+////else {
+////	Console.WriteLine("a es menor que b");
+////}
 
 //var result = (a > b) ? "a es mayor a b" : " a es menor a b";
 
@@ -42,7 +42,7 @@
 //}
 
 
-string x=null;
+string? x="valor x";
 
 var resultaado = (x ?? "valor y");
 
