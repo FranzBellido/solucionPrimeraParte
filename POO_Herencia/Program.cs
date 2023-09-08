@@ -10,7 +10,9 @@ var moto= new Moto();
 
 moto.Encender();
 
+var t1= new triangulo();
 
+t1.Id2=3;
 
 //var miAuto = new Auto("toyota", "2000");
 
