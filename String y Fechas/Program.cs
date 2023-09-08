@@ -32,10 +32,13 @@ string Cadena3 = $" la temperatura es {valor} C, y {valor2} F";
 
 //Console.WriteLine(contiene);
 
-//string cadena = "66;9999;101;4;10;33";
+string cadena = "66;9999;101;4;10;33";
 
 //cadena = "sdkjfhskdf";
-// string[] valores = cadena.Split(";");
+string[] valores = cadena.Split(";");
+
+var cadena10 = String.Join(",", valores);
+Console.WriteLine(cadena10);
 
 
 //string cadena5 = valores[0];
@@ -48,7 +51,7 @@ sb1.Append(Cadena3);
 sb1.Append("otro texto añsldkaskldj alskdja ñlsdkjasñ ldkjas ñdlkajsd lñkasjdasd");
 
 
-Console.WriteLine(sb1.ToString());
+Console.WriteLine(sb1);
 
 
 

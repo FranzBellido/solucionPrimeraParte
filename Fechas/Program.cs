@@ -1,8 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Globalization;
+
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
 
 
-
-using System.Globalization;
 
 DateTime mifecha = new DateTime(2023, 1, 26,16,15,20,DateTimeKind.Utc);
 
@@ -17,7 +18,7 @@ CultureInfo CurrentCulture = new CultureInfo("en-US");
 
 var fechastr = "10/22/2015 12:10:15";
 
-DateTime fecha2 = Convert.ToDateTime(fechastr, CurrentCulture);
+var fecha2 = Convert.ToDateTime(fechastr, CurrentCulture);
 
 
 var fecha3 = fecha2.AddDays(-2);
@@ -40,7 +41,8 @@ Console.WriteLine(fecha5.ToString());
 
 DateOnly fecha7= new();
 
-var fecha9= new DateOnly();
+var fecha9= new DateOnly(2022,3,2 );
+
 
 
 //Console.WriteLine(comparacion);
