@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Generics.Servicios
 {
-	public class RepositorioGenerico <T> where T : IEntidad
+	public class RepositorioGenerico <T> where T : IEntidad 
 	{
 
 
@@ -23,7 +23,8 @@ namespace Generics.Servicios
 		public void GuardarObjeto() {
 
 			Entidad.Id = 20;
-			Console.WriteLine("Guardando objeto");
+			Entidad.UserCreador = "franz";
+			Console.WriteLine("Guardando objeto ");
 		
 		}
 

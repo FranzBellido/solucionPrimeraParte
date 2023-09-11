@@ -2,11 +2,11 @@
 using Generics.Entidades;
 using Generics.Servicios;
 
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
-RepositorioPersona Repositorio = new RepositorioPersona();
+//RepositorioPersona Repositorio = new RepositorioPersona();
 
-var Persona1 = new Persona() { Id = 2, nombre = "Carlos", Edad = 34 };
+//var Persona1 = new Persona() { Id = 2, nombre = "Carlos", Edad = 34 };
 
 
 //Repositorio.GuardarPersona(Persona1);
@@ -16,19 +16,22 @@ var Persona1 = new Persona() { Id = 2, nombre = "Carlos", Edad = 34 };
 
 
 var repositorioGenerico =new RepositorioGenerico<Persona>();
-repositorioGenerico.Entidad = new Persona() {nombre = "Snadra Lopes", Edad = 22 };
+
+repositorioGenerico.Entidad = new Persona() {nombre = "Sadra Lopes", Edad = 22, UserCreador="ddfs" };
 repositorioGenerico.GuardarObjeto();
-Persona persona = repositorioGenerico.Entidad;
+//Persona persona = repositorioGenerico.Entidad;
+
+
+var RepositorioDoc= new RepositorioGenerico<Documento>();
+
+RepositorioDoc.GuardarObjeto();
+
+
+//Console.WriteLine(persona.nombre);
 
 
 
-
-
-Console.WriteLine(persona.nombre);
-
-
-
-var Person4 = repositorioGenerico.ObtenerObjeto(20);
+//var Person4 = repositorioGenerico.ObtenerObjeto(20);
 
 
 //Console.WriteLine(Person4.nombre);

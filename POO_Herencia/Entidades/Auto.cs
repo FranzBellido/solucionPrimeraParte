@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POO_Herencia.Entidades
 {
-	public  class Auto  :Vehiculo
+	public partial class Auto  :Vehiculo
 	{
 		//public Auto(string Marca1, string Modelo1) : base(Marca1, Modelo1)
 		//{
@@ -23,6 +23,7 @@ namespace POO_Herencia.Entidades
 
 			Console.WriteLine("enciende con tiempo:" + tiempo);
 		}
+
 
 	}
 }

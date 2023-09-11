@@ -7,19 +7,12 @@ using System.Threading.Tasks;
 
 namespace POO_Herencia.Entidades
 {
-	public class Circulo : IPieza,IServicio
+	public class Circulo : IPieza,IServicio,IEntidad
 	{
 		public int Diametro { get ; set ; }
 		public int Identificador { get ; set ; }
 
-		public Circulo( int para)
-        {
-            
-        }
-        public Circulo(int p, string p2)
-        {
-            
-        }
+		
         public decimal ObtenerArea()
 		{
 			Console.WriteLine("Calculando Area");

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace POO_Herencia.Entidades
 {
-	public class triangulo : Pieza
+	public class triangulo : Pieza, IEntidad
 	{
 		public override decimal Area()
 		{
